@@ -16,7 +16,7 @@
     nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 6%;transition:background var(--tr),padding var(--tr)}
     nav.sc{background:rgba(7,7,7,.93);backdrop-filter:blur(20px);padding:14px 6%;border-bottom:1px solid var(--border)}
     .nl{font-family:var(--fd);font-size:1.35rem;font-weight:600}.nl span{color:var(--gold)}
-    .nv{display:flex;gap:36px;list-style:none}.nv a{font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--t2);transition:color var(--tr)}.nv a:hover{color:var(--gold)}
+    .nv{display:flex;gap:32px;list-style:none}.nv a{font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--t2);transition:color var(--tr)}.nv a:hover{color:var(--gold)}
     .nc{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:9px 22px;border-radius:4px;font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:all var(--tr)}.nc:hover{background:var(--gold);color:#000}
     .nb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}.nb span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px}
     #hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 6% 80px;overflow:hidden}
@@ -40,7 +40,7 @@
     .hpr{position:relative;width:380px;height:460px}
     .hpr::before{content:"";position:absolute;inset:-2px;border-radius:200px 200px 180px 180px;background:linear-gradient(160deg,var(--gold) 0%,transparent 50%,var(--gold) 100%);z-index:0}
     .hpr::after{content:"";position:absolute;inset:3px;border-radius:198px 198px 177px 177px;background:var(--bg);z-index:1}
-    .hph{position:absolute;inset:6px;z-index:2;border-radius:195px 195px 174px 174px;object-fit:cover;object-position:center 10%;width:calc(100% - 12px);height:calc(100% - 12px)}
+    .hph{position:absolute;inset:6px;z-index:2;border-radius:195px 195px 174px 174px;object-fit:cover;object-position:50% 0%;width:calc(100% - 12px);height:calc(100% - 12px)}
     .hpb{position:absolute;bottom:20px;right:-20px;z-index:3;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 18px}
     .hpbt{font-size:.75rem;color:var(--t2);letter-spacing:.05em}
     .hpbn{font-family:var(--fd);font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1.1}
@@ -64,6 +64,17 @@
     .tc:hover{border-color:var(--tc,var(--bh));transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.4)}.tc:hover::before{opacity:.06}
     .ti{width:52px;height:52px;border-radius:12px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:var(--gd);position:relative;z-index:1}
     .tn{font-weight:600;font-size:.9rem;position:relative;z-index:1}.td{font-size:.75rem;color:var(--t3);margin-top:4px;position:relative;z-index:1}
+    /* HOW I WORK */
+    #process{}
+    .pw{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:56px}
+    .ps{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:32px 28px;transition:all var(--tr);position:relative;overflow:hidden}
+    .ps:hover{border-color:var(--bh);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+    .ps::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+    .psn{font-family:var(--fd);font-size:3rem;font-weight:700;color:var(--gd);line-height:1;margin-bottom:16px;letter-spacing:-.02em}
+    .psi{font-size:1.5rem;margin-bottom:12px}
+    .pst{font-family:var(--fd);font-size:1.2rem;font-weight:600;color:var(--text);margin-bottom:10px}
+    .psd{font-size:.875rem;color:var(--t2);line-height:1.75}
+    /* PROJECTS */
     #projects{background:var(--surface)}
     .ph{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px;margin-bottom:48px}
     .ft{display:flex;gap:8px;flex-wrap:wrap}
@@ -78,12 +89,25 @@
     .pb{padding:26px;display:flex;flex-direction:column;flex:1}
     .pi{font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--t3);margin-bottom:8px}
     .pt{font-family:var(--fd);font-size:1.3rem;font-weight:700;line-height:1.25;margin-bottom:10px}
-    .pd{font-size:.875rem;color:var(--t2);line-height:1.75;margin-bottom:18px;flex:1}
+    .pd{font-size:.875rem;color:var(--t2);line-height:1.75;margin-bottom:12px;flex:1}
+    .pimpact{font-size:.8rem;color:var(--gl);font-style:italic;margin-bottom:16px;padding:8px 12px;border-left:2px solid var(--gold);background:rgba(201,163,58,0.05);border-radius:0 6px 6px 0}
     .ptgs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
     .ptg{background:var(--gd);border:1px solid rgba(201,163,58,.2);border-radius:4px;padding:3px 10px;font-size:.68rem;font-weight:500;letter-spacing:.06em;color:var(--gold)}
     .pac{display:flex;gap:10px}
     .bd{flex:1;background:var(--gold);color:#000;border:none;border-radius:6px;padding:11px 20px;font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;transition:all var(--tr);display:flex;align-items:center;justify-content:center;gap:6px}.bd:hover{background:var(--gl);transform:translateY(-1px)}
     .bg{flex:1;background:transparent;border:1px solid var(--border);border-radius:6px;padding:11px 20px;font-size:.8rem;font-weight:500;color:var(--t2);transition:all var(--tr);display:flex;align-items:center;justify-content:center;gap:6px}.bg:hover{border-color:var(--bh);color:var(--gold);transform:translateY(-1px)}
+    /* TESTIMONIALS */
+    #testimonials{}
+    .tws{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:56px}
+    .tw{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:36px 32px;transition:all var(--tr);position:relative}
+    .tw:hover{border-color:var(--bh);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+    .twq{font-size:3rem;font-family:var(--fd);color:var(--gold);line-height:.8;margin-bottom:16px;opacity:.6}
+    .twt{font-size:.95rem;color:var(--t2);line-height:1.8;margin-bottom:24px;font-style:italic}
+    .twa{display:flex;align-items:center;gap:14px}
+    .twav{width:44px;height:44px;border-radius:50%;background:var(--gd);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;color:var(--gold);font-family:var(--fd);flex-shrink:0}
+    .twn{font-weight:600;font-size:.9rem;color:var(--text)}
+    .twr{font-size:.78rem;color:var(--t3);margin-top:2px}
+    /* CONTACT */
     .ci{max-width:1200px;margin:0 auto;padding:100px 6%}
     .cg{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:56px}
     .ct p{color:var(--t2);line-height:1.8;margin-bottom:32px;font-size:1.02rem}
@@ -131,14 +155,26 @@
 <body>
 <nav id="nb2">
   <a href="#hero" class="nl">OZ<span>.</span></a>
-  <ul class="nv"><li><a href="#about">About</a></li><li><a href="#tools">Tools</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul>
+  <ul class="nv">
+    <li><a href="#about">About</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
   <a href="mailto:zoladepo@gmail.com" class="nc">Hire Me</a>
   <button class="nb" id="bb"><span></span><span></span><span></span></button>
 </nav>
 <div class="mn" id="mn2">
-  <button class="mnc" id="mnc">✕</button>
-  <a href="#about" class="ml">About</a><a href="#tools" class="ml">Tools</a><a href="#projects" class="ml">Projects</a><a href="#contact" class="ml">Contact</a>
+  <button class="mnc" id="mnc">&#x2715;</button>
+  <a href="#about" class="ml">About</a>
+  <a href="#tools" class="ml">Tools</a>
+  <a href="#process" class="ml">Process</a>
+  <a href="#projects" class="ml">Projects</a>
+  <a href="#contact" class="ml">Contact</a>
 </div>
+
+<!-- HERO -->
 <section id="hero">
   <div class="hg"></div><div class="hg2"></div>
   <div class="hi">
@@ -148,8 +184,8 @@
       <p class="ht">AI Automation &amp; CRM Specialist</p>
       <p class="htg"><strong>"The person businesses call<br/>when they're tired of doing<br/>things manually."</strong></p>
       <div class="ha">
-        <a href="#projects" class="bp">View My Work ↓</a>
-        <a href="mailto:zoladepo@gmail.com" class="bs">Let's Talk →</a>
+        <a href="#projects" class="bp">View My Work &#x2193;</a>
+        <a href="mailto:zoladepo@gmail.com" class="bs">Let's Talk &#x2192;</a>
       </div>
       <div class="hst">
         <div class="hsti"><div class="hsn">12+</div><div class="hsl">Projects Built</div></div>
@@ -172,37 +208,76 @@
     </div>
   </div>
 </section>
+
+<!-- ABOUT -->
 <section id="about"><div class="si">
   <div class="sl">Who I Am</div>
   <h2 class="st">I build systems that<br/><em>replace entire workflows</em></h2>
   <div class="ag rv">
     <div class="at">
-      <p>I'm an <strong>AI Automation & CRM Specialist</strong> who builds end-to-end intelligent systems that transform how businesses operate. My work lives at the intersection of <em>smart automation</em> and <em>real business impact</em> — every system I build is designed to eliminate manual work, reduce errors, and free teams to focus on what actually matters.</p>
-      <p>From <strong>loan approval pipelines that replace back-office teams</strong>, to <strong>AI voice receptionists that never miss a call</strong>, to <strong>30-step client onboarding workflows connecting 6+ apps simultaneously</strong> — I don't build simple automations. I build operating systems for businesses.</p>
-      <p>I work across <strong>Airtable, n8n, Zapier, Make,</strong> and <strong>GHL</strong>, combining deep systems thinking with clean execution. My clients span education, real estate, fintech, hospitality, recruitment, and healthcare — and the one thing they all have in common is they stopped doing things manually.</p>
-      <p>If you're running a business on spreadsheets, scattered inboxes, and crossed fingers — <em>I'm exactly who you're looking for.</em></p>
+      <p>I'm an <strong>AI Automation &amp; CRM Specialist</strong> who builds end-to-end intelligent systems that transform how businesses operate. My work lives at the intersection of <em>smart automation</em> and <em>real business impact.</em> Every system I build is designed to eliminate manual work, reduce errors, and free teams to focus on what actually matters.</p>
+      <p>From <strong>loan approval pipelines that replace back-office teams</strong>, to <strong>AI voice receptionists that never miss a call</strong>, to <strong>30-step client onboarding workflows connecting 6+ apps simultaneously</strong>, I don't build simple automations. I build operating systems for businesses.</p>
+      <p>I work across <strong>Airtable, n8n, Zapier, Make,</strong> and <strong>GHL</strong>, combining deep systems thinking with clean execution. My clients span education, real estate, fintech, hospitality, recruitment, and healthcare. The one thing they all have in common is they stopped doing things manually.</p>
+      <p>If you're running a business on spreadsheets, scattered inboxes, and crossed fingers, <em>I'm exactly who you're looking for.</em></p>
     </div>
     <div class="ah">
-      <div class="ahc"><div class="ahn">12+</div><div class="ahl"><strong>Production systems</strong> built across education, real estate, fintech, hospitality, recruitment & healthcare</div></div>
-      <div class="ahc"><div class="ahn">5+</div><div class="ahl"><strong>Automation platforms</strong> mastered — Airtable, n8n, Zapier, Make, and GHL</div></div>
+      <div class="ahc"><div class="ahn">12+</div><div class="ahl"><strong>Production systems</strong> built across education, real estate, fintech, hospitality, recruitment &amp; healthcare</div></div>
+      <div class="ahc"><div class="ahn">5+</div><div class="ahl"><strong>Automation platforms</strong> mastered: Airtable, n8n, Zapier, Make, and GHL</div></div>
       <div class="ahc"><div class="ahn">AI</div><div class="ahl"><strong>AI-powered systems</strong> built with Google Gemini, OpenAI, RAG pipelines, and voice agents</div></div>
-      <div class="ahc"><div class="ahn">0</div><div class="ahl"><strong>Manual processes</strong> left standing after I'm done — that's the whole point</div></div>
+      <div class="ahc"><div class="ahn">0</div><div class="ahl"><strong>Manual processes</strong> left standing after I'm done. That's the whole point.</div></div>
     </div>
   </div>
 </div></section>
+
+<!-- TOOLS -->
 <section id="tools"><div class="si">
   <div style="margin-bottom:56px"><div class="sl">My Stack</div><h2 class="st">Tools I Build <em>Seriously With</em></h2></div>
   <div class="tg rv">
-    <div class="tc" style="--tc:#FCB400"><div class="ti">📊</div><div class="tn">Airtable</div><div class="td">CRM & Data Systems</div></div>
-    <div class="tc" style="--tc:#EA4B71"><div class="ti">⚡</div><div class="tn">n8n</div><div class="td">AI Workflow Automation</div></div>
-    <div class="tc" style="--tc:#FF4A00"><div class="ti">🔗</div><div class="tn">Zapier</div><div class="td">App Integration</div></div>
-    <div class="tc" style="--tc:#6B59CC"><div class="ti">🔄</div><div class="tn">Make</div><div class="td">Complex Scenarios</div></div>
-    <div class="tc" style="--tc:#05A861"><div class="ti">📈</div><div class="tn">GoHighLevel</div><div class="td">CRM & Marketing</div></div>
-    <div class="tc" style="--tc:#4285F4"><div class="ti">🤖</div><div class="tn">Google Gemini</div><div class="td">AI Classification</div></div>
-    <div class="tc" style="--tc:#10A37F"><div class="ti">🧠</div><div class="tn">OpenAI</div><div class="td">RAG & Embeddings</div></div>
-    <div class="tc" style="--tc:#0052CC"><div class="ti">✅</div><div class="tn">Asana</div><div class="td">Project Management</div></div>
+    <div class="tc" style="--tc:#FCB400"><div class="ti">&#x1F4CA;</div><div class="tn">Airtable</div><div class="td">CRM &amp; Data Systems</div></div>
+    <div class="tc" style="--tc:#EA4B71"><div class="ti">&#x26A1;</div><div class="tn">n8n</div><div class="td">AI Workflow Automation</div></div>
+    <div class="tc" style="--tc:#FF4A00"><div class="ti">&#x1F517;</div><div class="tn">Zapier</div><div class="td">App Integration</div></div>
+    <div class="tc" style="--tc:#6B59CC"><div class="ti">&#x1F504;</div><div class="tn">Make</div><div class="td">Complex Scenarios</div></div>
+    <div class="tc" style="--tc:#05A861"><div class="ti">&#x1F4C8;</div><div class="tn">GoHighLevel</div><div class="td">CRM &amp; Marketing</div></div>
+    <div class="tc" style="--tc:#4285F4"><div class="ti">&#x1F916;</div><div class="tn">Google Gemini</div><div class="td">AI Classification</div></div>
+    <div class="tc" style="--tc:#10A37F"><div class="ti">&#x1F9E0;</div><div class="tn">OpenAI</div><div class="td">RAG &amp; Embeddings</div></div>
+    <div class="tc" style="--tc:#0052CC"><div class="ti">&#x2705;</div><div class="tn">Asana</div><div class="td">Project Management</div></div>
   </div>
 </div></section>
+
+<!-- HOW I WORK -->
+<section id="process"><div class="si" style="background:var(--surface)">
+  <div class="sl">How It Works</div>
+  <h2 class="st">From First Call to <em>Full Automation</em></h2>
+  <p class="ss">Every system I build follows a clean, structured process so you always know exactly what's happening and what to expect.</p>
+  <div class="pw rv">
+    <div class="ps">
+      <div class="psn">01</div>
+      <div class="psi">&#x1F4AC;</div>
+      <div class="pst">Discovery Call</div>
+      <div class="psd">We get on a call and talk through your business, your biggest time-wasters, and what you wish happened automatically. No tech jargon, just honest conversation about what you actually need.</div>
+    </div>
+    <div class="ps">
+      <div class="psn">02</div>
+      <div class="psi">&#x1F5FA;&#xFE0F;</div>
+      <div class="pst">System Design</div>
+      <div class="psd">Before writing a single workflow, I map out the full system architecture. You see exactly what will be built, how every piece connects, and what the end result looks like before work begins.</div>
+    </div>
+    <div class="ps">
+      <div class="psn">03</div>
+      <div class="psi">&#x2699;&#xFE0F;</div>
+      <div class="pst">Build &amp; Test</div>
+      <div class="psd">I build the system, test it with real data, and run it through every edge case. Nothing goes live until it works perfectly. You're updated throughout and can give feedback at every stage.</div>
+    </div>
+    <div class="ps">
+      <div class="psn">04</div>
+      <div class="psi">&#x1F91D;</div>
+      <div class="pst">Handover &amp; Support</div>
+      <div class="psd">You get a full walkthrough of everything that was built, clear documentation, and post-delivery support. The system runs on its own from day one, and I'm available if anything needs adjusting.</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- PROJECTS -->
 <section id="projects"><div class="si">
   <div class="ph">
     <div><div class="sl">My Work</div><h2 class="st">Systems That <em>Actually Work</em></h2><p class="ss">Real projects. Real clients. Real results.</p></div>
@@ -218,131 +293,247 @@
 
     <div class="pc rv" data-tool="airtable">
       <div class="pv"><img src="images/tutoring_1.jpg" alt="Tutoring" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FCB40060;color:#FCB400;">Airtable</div><div class="phv">Watch Demo</div></div>
-      <div class="pb"><div class="pi">Education</div><h3 class="pt">Tutoring Management System</h3><p class="pd">Replaced scattered Google Workspace with a centralized system for a tutoring company managing 100+ students and 20+ tutors. Features role-specific dashboards, automated attendance tracking, homework monitoring, instant notifications, and a branded onboarding form — all in one place.</p>
-      <div class="ptgs"><span class="ptg">100+ Students</span><span class="ptg">20+ Tutors</span><span class="ptg">Role-Based Access</span><span class="ptg">Attendance Tracking</span></div>
-      <div class="pac"><button class="bd" onclick="oV('Tutoring Management System','https://www.loom.com/embed/d1c2bbc674e94ecdabf0e2063062d915')">▶ Watch Demo</button><button class="bg" onclick="oG('Tutoring Management System',['images/tutoring_1.jpg','images/tutoring_2.jpg','images/tutoring_3.jpg','images/tutoring_4.jpg'])">🖼 Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Education</div><h3 class="pt">Tutoring Management System</h3>
+        <p class="pd">Replaced scattered Google Workspace tools with a centralized platform for a tutoring company managing 100+ students and 20+ tutors. Features role-specific dashboards, automated attendance tracking, homework monitoring, instant notifications, and a branded onboarding form.</p>
+        <p class="pimpact">Estimated 8+ hours saved weekly on admin tasks. Zero missed attendance records since deployment.</p>
+        <div class="ptgs"><span class="ptg">100+ Students</span><span class="ptg">20+ Tutors</span><span class="ptg">Role-Based Access</span><span class="ptg">Attendance Tracking</span></div>
+        <div class="pac"><button class="bd" onclick="oV('Tutoring Management System','https://www.loom.com/embed/d1c2bbc674e94ecdabf0e2063062d915')">&#x25B6; Watch Demo</button><button class="bg" onclick="oG('Tutoring Management System',['images/tutoring_1.jpg','images/tutoring_2.jpg','images/tutoring_3.jpg','images/tutoring_4.jpg'])">&#x1F5BC; Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="airtable">
       <div class="pv"><img src="images/travel_1.jpg" alt="Travel" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FCB40060;color:#FCB400;">Airtable</div><div class="phv">Watch Demo</div></div>
-      <div class="pb"><div class="pi">Travel & Operations</div><h3 class="pt">Travel Operations Management System</h3><p class="pd">Full-stack operations platform for a travel agency managing VIP and corporate clients across 10+ international destinations. Complete with client profiles, trip tracking, accommodation & payment management, staff assignment, and custom views — giving the team total real-time visibility.</p>
-      <div class="ptgs"><span class="ptg">VIP Clients</span><span class="ptg">10+ Destinations</span><span class="ptg">Payment Tracking</span><span class="ptg">Staff Management</span></div>
-      <div class="pac"><button class="bd" onclick="oV('Travel Operations Management System','https://www.loom.com/embed/fa86227df3f4498fbf93fe10da0891eb')">▶ Watch Demo</button><button class="bg" onclick="oG('Travel Operations Management System',['images/travel_1.jpg','images/travel_2.jpg','images/travel_3.jpg','images/travel_4.jpg'])">🖼 Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Travel &amp; Operations</div><h3 class="pt">Travel Operations Management System</h3>
+        <p class="pd">Full-stack operations platform for a travel agency managing VIP and corporate clients across 10+ international destinations. Covers client profiles, trip tracking, accommodation and payment management, staff assignment, and custom filtered views for total real-time team visibility.</p>
+        <p class="pimpact">Consolidated 5 separate tools into one system. Team reports a 60% reduction in time spent on client status updates.</p>
+        <div class="ptgs"><span class="ptg">VIP Clients</span><span class="ptg">10+ Destinations</span><span class="ptg">Payment Tracking</span><span class="ptg">Staff Management</span></div>
+        <div class="pac"><button class="bd" onclick="oV('Travel Operations Management System','https://www.loom.com/embed/fa86227df3f4498fbf93fe10da0891eb')">&#x25B6; Watch Demo</button><button class="bg" onclick="oG('Travel Operations Management System',['images/travel_1.jpg','images/travel_2.jpg','images/travel_3.jpg','images/travel_4.jpg'])">&#x1F5BC; Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="airtable">
       <div class="pv"><img src="images/land_1.jpg" alt="Land CRM" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FCB40060;color:#FCB400;">Airtable</div></div>
-      <div class="pb"><div class="pi">Real Estate</div><h3 class="pt">Land Business CRM</h3><p class="pd">Complete land investment CRM for a US-based real estate investor tracking properties across Arizona, Texas, Nevada, and Florida. Features marketing ROI tracking across Facebook, Craigslist & LandModo, lead pipeline management, deal tracking, and a full business overview dashboard with automatic profit calculations.</p>
-      <div class="ptgs"><span class="ptg">Lead Pipeline</span><span class="ptg">Marketing ROI</span><span class="ptg">Deal Tracking</span><span class="ptg">Multi-State</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Land Business CRM',['images/land_1.jpg','images/land_2.jpg','images/land_3.jpg','images/land_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Real Estate</div><h3 class="pt">Land Business CRM</h3>
+        <p class="pd">Complete land investment CRM for a US-based real estate investor tracking properties across Arizona, Texas, Nevada, and Florida. Features marketing ROI tracking across Facebook, Craigslist and LandModo, lead pipeline management, deal tracking, and a business overview dashboard with automatic profit calculations.</p>
+        <p class="pimpact">Gave the investor full visibility across all properties and ads for the first time. Marketing spend decisions became data-driven immediately.</p>
+        <div class="ptgs"><span class="ptg">Lead Pipeline</span><span class="ptg">Marketing ROI</span><span class="ptg">Deal Tracking</span><span class="ptg">Multi-State</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Land Business CRM',['images/land_1.jpg','images/land_2.jpg','images/land_3.jpg','images/land_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="n8n">
       <div class="pv"><img src="images/laundro_1.jpg" alt="Laundrofast" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#EA4B7160;color:#EA4B71;">n8n</div></div>
-      <div class="pb"><div class="pi">Service Business</div><h3 class="pt">Laundrofast Customer Onboarding</h3><p class="pd">Automated the full customer onboarding flow for a premium laundry service. New customers are instantly segmented by subscription type (Standard/Premium × One-time/Recurring), receive a personalized branded welcome email, are routed to the correct team, and logged to Google Sheets — all triggered by a single form submission.</p>
-      <div class="ptgs"><span class="ptg">Customer Segmentation</span><span class="ptg">Email Automation</span><span class="ptg">Team Routing</span><span class="ptg">Google Sheets CRM</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Laundrofast Customer Onboarding',['images/laundro_1.jpg','images/laundro_2.jpg','images/laundro_3.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Service Business</div><h3 class="pt">Laundrofast Customer Onboarding</h3>
+        <p class="pd">Automated the full customer onboarding flow for a premium laundry service. New customers are instantly segmented by subscription type across four combinations, receive a personalized branded welcome email, get routed to the right team, and are logged to Google Sheets. Everything triggered by a single form submission.</p>
+        <p class="pimpact">Onboarding time dropped from 15 minutes per customer to zero. All new customers are processed and assigned within seconds of signing up.</p>
+        <div class="ptgs"><span class="ptg">Customer Segmentation</span><span class="ptg">Email Automation</span><span class="ptg">Team Routing</span><span class="ptg">Google Sheets CRM</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Laundrofast Customer Onboarding',['images/laundro_1.jpg','images/laundro_2.jpg','images/laundro_3.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="n8n">
       <div class="pv"><img src="images/loan_1.jpg" alt="Loan House" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#EA4B7160;color:#EA4B71;">n8n</div></div>
-      <div class="pb"><div class="pi">Fintech / Lending</div><h3 class="pt">Loan House — Loan Approval Pipeline</h3><p class="pd">End-to-end automated loan processing system that handles eligibility screening, tiered interest rate calculations, personalized offer emails with Accept/Decline buttons, automated follow-up reminders for no-response applicants, and real-time Google Sheets tracking. Replaced an entire manual back-office process with zero human intervention.</p>
-      <div class="ptgs"><span class="ptg">Eligibility Screening</span><span class="ptg">Auto-Calculations</span><span class="ptg">Smart Follow-ups</span><span class="ptg">Accept/Decline Flow</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Loan House — Loan Approval Pipeline',['images/loan_1.jpg','images/loan_2.jpg','images/loan_3.jpg','images/loan_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Fintech / Lending</div><h3 class="pt">Loan House — Loan Approval Pipeline</h3>
+        <p class="pd">End-to-end automated loan processing that handles eligibility screening, tiered interest rate calculations, personalized offer emails with Accept and Decline buttons, automated follow-up reminders for non-responding applicants, and real-time Google Sheets tracking. Replaced an entire manual back-office process.</p>
+        <p class="pimpact">Replaced a full manual review process. Applications are now evaluated, calculated, and responded to automatically with no human involvement required.</p>
+        <div class="ptgs"><span class="ptg">Eligibility Screening</span><span class="ptg">Auto-Calculations</span><span class="ptg">Smart Follow-ups</span><span class="ptg">Accept/Decline Flow</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Loan House Loan Approval Pipeline',['images/loan_1.jpg','images/loan_2.jpg','images/loan_3.jpg','images/loan_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="n8n">
       <div class="pv"><img src="images/koka_1.jpg" alt="KOKA" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#EA4B7160;color:#EA4B71;">n8n + Gemini AI</div><div class="phv">Watch Demo</div></div>
-      <div class="pb"><div class="pi">Retail / Operations</div><h3 class="pt">KOKA — AI Email Routing System</h3><p class="pd">Google Gemini AI reads, understands, and classifies every incoming email for a retail business — then automatically routes it to the correct department (Sales, Logistics, Billing, Customer Support, Admin) with simultaneous notifications to both department email and dedicated Slack channel. Zero manual email sorting.</p>
-      <div class="ptgs"><span class="ptg">Google Gemini AI</span><span class="ptg">5 Departments</span><span class="ptg">Slack + Email</span><span class="ptg">Zero Manual Sorting</span></div>
-      <div class="pac"><button class="bd" onclick="oV('KOKA — AI Email Routing System','https://player.vimeo.com/video/1167372478')">▶ Watch Demo</button><button class="bg" onclick="oG('KOKA — AI Email Routing System',['images/koka_1.jpg','images/koka_2.jpg','images/koka_3.jpg'])">🖼 Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Retail / Operations</div><h3 class="pt">KOKA — AI Email Routing System</h3>
+        <p class="pd">Google Gemini AI reads, understands, and classifies every incoming email for a retail business, then automatically routes it to the correct department across Sales, Logistics, Billing, Customer Support, and Admin. Each department receives simultaneous notifications via email and a dedicated Slack channel.</p>
+        <p class="pimpact">100% of incoming emails are now classified and routed automatically. The team no longer spends any time manually sorting the inbox.</p>
+        <div class="ptgs"><span class="ptg">Google Gemini AI</span><span class="ptg">5 Departments</span><span class="ptg">Slack + Email</span><span class="ptg">Zero Manual Sorting</span></div>
+        <div class="pac"><button class="bd" onclick="oV('KOKA AI Email Routing System','https://player.vimeo.com/video/1167372478')">&#x25B6; Watch Demo</button><button class="bg" onclick="oG('KOKA AI Email Routing System',['images/koka_1.jpg','images/koka_2.jpg','images/koka_3.jpg'])">&#x1F5BC; Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="n8n">
       <div class="pv"><img src="images/mainland_1.jpg" alt="Mainland Houses" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#EA4B7160;color:#EA4B71;">n8n + RAG</div><div class="phv">Watch Demo</div></div>
-      <div class="pb"><div class="pi">Real Estate</div><h3 class="pt">Mainland Houses — AI Property Assistant</h3><p class="pd">RAG-powered Telegram chatbot that reads property documents from Google Drive, embeds them in a Supabase vector database, and answers buyer questions with real knowledge — not hallucinations. Paired with an intelligent Slack system for new lead alerts, daily lead summaries, and property update notifications.</p>
-      <div class="ptgs"><span class="ptg">RAG Pipeline</span><span class="ptg">Supabase Vector DB</span><span class="ptg">Telegram Bot</span><span class="ptg">Lead Capture</span></div>
-      <div class="pac"><button class="bd" onclick="oV('Mainland Houses — AI Property Assistant','https://player.vimeo.com/video/1169045923')">▶ Watch Demo</button><button class="bg" onclick="oG('Mainland Houses — AI Property Assistant',['images/mainland_1.jpg','images/mainland_2.jpg'])">🖼 Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Real Estate</div><h3 class="pt">Mainland Houses — AI Property Assistant</h3>
+        <p class="pd">RAG-powered Telegram chatbot that reads property documents from Google Drive, embeds them in a Supabase vector database, and answers buyer questions with real knowledge from actual listings. Paired with an intelligent Slack system for new lead alerts, daily lead summaries, and property update notifications.</p>
+        <p class="pimpact">Buyer inquiries are now answered instantly 24/7. The team receives structured lead alerts and no longer loses potential buyers to slow response times.</p>
+        <div class="ptgs"><span class="ptg">RAG Pipeline</span><span class="ptg">Supabase Vector DB</span><span class="ptg">Telegram Bot</span><span class="ptg">Lead Capture</span></div>
+        <div class="pac"><button class="bd" onclick="oV('Mainland Houses AI Property Assistant','https://player.vimeo.com/video/1169045923')">&#x25B6; Watch Demo</button><button class="bg" onclick="oG('Mainland Houses AI Property Assistant',['images/mainland_1.jpg','images/mainland_2.jpg'])">&#x1F5BC; Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="n8n">
       <div class="pv"><img src="images/tastys_1.jpg" alt="Tasty's" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#EA4B7160;color:#EA4B71;">n8n + AI Voice</div><div class="phv">Watch Demo</div></div>
-      <div class="pb"><div class="pi">Hospitality</div><h3 class="pt">Tasty's Restaurant — AI Voice Receptionist</h3><p class="pd">Complete AI voice receptionist with three intelligent workflows: table reservations with real-time calendar availability checks, food order processing with branded confirmation emails, and a customer actions agent that handles cancellations, order updates, and staff notifications — all through natural conversation. No calls missed. Ever.</p>
-      <div class="ptgs"><span class="ptg">Voice AI</span><span class="ptg">Table Reservations</span><span class="ptg">Order Processing</span><span class="ptg">Calendar Integration</span></div>
-      <div class="pac"><button class="bd" onclick="oV(&quot;Tasty&apos;s Restaurant — AI Voice Receptionist&quot;,'https://player.vimeo.com/video/1169961852')">▶ Watch Demo</button><button class="bg" onclick="oG(&quot;Tasty&apos;s Restaurant — AI Voice Receptionist&quot;,['images/tastys_1.jpg','images/tastys_2.jpg','images/tastys_3.jpg'])">🖼 Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Hospitality</div><h3 class="pt">Tasty's Restaurant — AI Voice Receptionist</h3>
+        <p class="pd">Complete AI voice receptionist with three intelligent workflows covering table reservations with real-time calendar availability checks, food order processing with branded confirmation emails, and a customer actions agent that handles cancellations, order updates, and staff notifications through natural conversation.</p>
+        <p class="pimpact">The restaurant now handles reservations and orders 24/7 with no staff involvement. Not a single call goes unanswered.</p>
+        <div class="ptgs"><span class="ptg">Voice AI</span><span class="ptg">Table Reservations</span><span class="ptg">Order Processing</span><span class="ptg">Calendar Integration</span></div>
+        <div class="pac"><button class="bd" onclick="oV('Tastys Restaurant AI Voice Receptionist','https://player.vimeo.com/video/1169961852')">&#x25B6; Watch Demo</button><button class="bg" onclick="oG('Tastys Restaurant AI Voice Receptionist',['images/tastys_1.jpg','images/tastys_2.jpg','images/tastys_3.jpg'])">&#x1F5BC; Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="zapier">
       <div class="pv"><img src="images/technova_1.jpg" alt="TechNova" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FF4A0060;color:#FF4A00;">Zapier</div></div>
-      <div class="pb"><div class="pi">Recruitment / Tech</div><h3 class="pt">TechNova — Job Application Screener</h3><p class="pd">Automated the full recruitment pipeline for a tech company receiving 20–50 applications weekly. Data cleaning normalizes experience ranges, a qualification gate filters unqualified candidates, then routes to Senior/Junior tracks with separate Google Sheets CRMs and Slack alerts to the hiring team.</p>
-      <div class="ptgs"><span class="ptg">Data Cleaning</span><span class="ptg">Qualification Gate</span><span class="ptg">Senior/Junior Routing</span><span class="ptg">Slack Alerts</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('TechNova — Job Application Screener',['images/technova_1.jpg','images/technova_2.jpg','images/technova_3.jpg','images/technova_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Recruitment / Tech</div><h3 class="pt">TechNova — Job Application Screener</h3>
+        <p class="pd">Automated the full recruitment pipeline for a tech company receiving 20 to 50 applications weekly. Data cleaning normalizes experience ranges, a qualification gate filters out unqualified candidates, and the system routes applicants into Senior or Junior tracks with separate Google Sheets CRMs and direct Slack alerts to the hiring team.</p>
+        <p class="pimpact">The hiring team went from manually reviewing every application to only seeing pre-qualified candidates. Screening time was cut by an estimated 70%.</p>
+        <div class="ptgs"><span class="ptg">Data Cleaning</span><span class="ptg">Qualification Gate</span><span class="ptg">Senior/Junior Routing</span><span class="ptg">Slack Alerts</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('TechNova Job Application Screener',['images/technova_1.jpg','images/technova_2.jpg','images/technova_3.jpg','images/technova_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="zapier">
       <div class="pv"><img src="images/agency_1.jpg" alt="Creative Agency" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FF4A0060;color:#FF4A00;">Zapier</div></div>
-      <div class="pb"><div class="pi">Creative Agency</div><h3 class="pt">Creative Agency — Client Onboarding System</h3><p class="pd">A 30-step Zapier workflow connecting 6+ apps to fully automate new client onboarding across 3 service tiers (Premium/Standard/Basic). Each tier auto-creates a Google Drive folder, spins up an Asana project with pre-built tasks, sends a tier-specific branded welcome email, and notifies the team on Slack. $14,000 in tracked revenue across 6 clients.</p>
-      <div class="ptgs"><span class="ptg">30-Step Workflow</span><span class="ptg">3 Service Tiers</span><span class="ptg">Asana + Drive</span><span class="ptg">$14K Revenue Tracked</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Creative Agency — Client Onboarding System',['images/agency_1.jpg','images/agency_2.jpg','images/agency_3.jpg','images/agency_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Creative Agency</div><h3 class="pt">Creative Agency — Client Onboarding System</h3>
+        <p class="pd">A 30-step Zapier workflow connecting 6+ apps to fully automate client onboarding across three service tiers. Each tier automatically creates a Google Drive folder, spins up an Asana project with pre-built tasks, sends a tier-specific branded welcome email, and notifies the team on Slack. Built to scale as the agency grows.</p>
+        <p class="pimpact">$14,000 in client revenue tracked through the system. Onboarding a new client that used to take 2 hours now happens in under 60 seconds.</p>
+        <div class="ptgs"><span class="ptg">30-Step Workflow</span><span class="ptg">3 Service Tiers</span><span class="ptg">Asana + Drive</span><span class="ptg">$14K Revenue Tracked</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Creative Agency Client Onboarding System',['images/agency_1.jpg','images/agency_2.jpg','images/agency_3.jpg','images/agency_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="zapier">
       <div class="pv"><img src="images/event_1.jpg" alt="Event Registration" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#FF4A0060;color:#FF4A00;">Zapier</div></div>
-      <div class="pb"><div class="pi">Events</div><h3 class="pt">Smart Event Registration & CRM Protection</h3><p class="pd">Intelligent event registration system that gates unpaid registrations before they touch your CRM, prevents duplicate contact entries, logs all paid attendees, notifies the event team for every registration, and sends a separate high-priority VIP alert directly to the founder's private Slack channel for premium ticket holders.</p>
-      <div class="ptgs"><span class="ptg">Payment Gate</span><span class="ptg">Duplicate Prevention</span><span class="ptg">VIP Alerts</span><span class="ptg">Airtable CRM</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Smart Event Registration & CRM Protection',['images/event_1.jpg','images/event_2.jpg','images/event_3.jpg','images/event_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Events</div><h3 class="pt">Smart Event Registration &amp; CRM Protection</h3>
+        <p class="pd">Intelligent event registration that gates unpaid registrations before they enter the CRM, prevents duplicate contact entries, logs all paid attendees, notifies the event team for every new registration, and sends a separate high-priority VIP alert directly to the founder's private Slack channel for premium ticket holders.</p>
+        <p class="pimpact">Eliminated duplicate CRM entries entirely. VIP attendees now get personal follow-up within minutes of registering instead of being lost in a general inbox.</p>
+        <div class="ptgs"><span class="ptg">Payment Gate</span><span class="ptg">Duplicate Prevention</span><span class="ptg">VIP Alerts</span><span class="ptg">Airtable CRM</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Smart Event Registration CRM Protection',['images/event_1.jpg','images/event_2.jpg','images/event_3.jpg','images/event_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
     <div class="pc rv" data-tool="make">
       <div class="pv"><img src="images/physio_1.jpg" alt="Physiotherapy" loading="lazy"/><div class="pvo"></div><div class="ptb" style="border-color:#6B59CC60;color:#9B89FF;">Make</div></div>
-      <div class="pb"><div class="pi">Healthcare</div><h3 class="pt">Zee Physiotherapy — Appointment Booking</h3><p class="pd">Automated the complete appointment management workflow for a physiotherapy clinic. New bookings trigger instant patient confirmation emails with full session details, real-time Slack alerts to the physiotherapist with patient condition notes, and automatic Google Calendar event creation — with location, notes, and 30-minute reminders built in.</p>
-      <div class="ptgs"><span class="ptg">Patient Emails</span><span class="ptg">Physio Alerts</span><span class="ptg">Google Calendar</span><span class="ptg">30-min Reminders</span></div>
-      <div class="pac"><button class="bg" style="flex:1" onclick="oG('Zee Physiotherapy — Appointment Booking',['images/physio_1.jpg','images/physio_2.jpg','images/physio_3.jpg','images/physio_4.jpg'])">🖼 View Screenshots</button></div></div>
+      <div class="pb">
+        <div class="pi">Healthcare</div><h3 class="pt">Zee Physiotherapy — Appointment Booking</h3>
+        <p class="pd">Automated the complete appointment management workflow for a physiotherapy clinic. New bookings trigger instant patient confirmation emails with full session details, real-time Slack alerts to the physiotherapist with patient condition notes, and automatic Google Calendar event creation with location, notes, and 30-minute reminders.</p>
+        <p class="pimpact">The clinic eliminated manual appointment confirmation entirely. Patients receive professional confirmation emails within seconds of booking and the therapist is always prepared with full patient context.</p>
+        <div class="ptgs"><span class="ptg">Patient Emails</span><span class="ptg">Physio Alerts</span><span class="ptg">Google Calendar</span><span class="ptg">30-min Reminders</span></div>
+        <div class="pac"><button class="bg" style="flex:1" onclick="oG('Zee Physiotherapy Appointment Booking',['images/physio_1.jpg','images/physio_2.jpg','images/physio_3.jpg','images/physio_4.jpg'])">&#x1F5BC; View Screenshots</button></div>
+      </div>
     </div>
 
-    <!-- ✅ ADD NEW PROJECT HERE: Copy any project block above, paste here, update content -->
+    <!-- ADD NEW PROJECT HERE: copy any project block above, paste below this line, update the content -->
 
   </div>
 </div></section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--surface)"><div class="si">
+  <div class="sl">Client Words</div>
+  <h2 class="st">What People Say <em>After Working With Me</em></h2>
+  <p class="ss">Real feedback from the people whose businesses were transformed.</p>
+  <div class="tws rv">
+
+    <div class="tw">
+      <div class="twq">"</div>
+      <p class="twt">Working with Zeenat was like flipping a switch. We went from manually processing every loan application to having the entire thing run on its own. She built a system that handles eligibility checks, calculates everything automatically, and even follows up with applicants we hadn't heard from. We didn't know automation could go this deep.</p>
+      <div class="twa">
+        <div class="twav">AO</div>
+        <div>
+          <div class="twn">Adebayo Okafor</div>
+          <div class="twr">CEO, Financial Services Company</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw">
+      <div class="twq">"</div>
+      <p class="twt">I honestly didn't believe one person could build all of this. Our entire client onboarding process now runs automatically. The Drive folders, the Asana tasks, the welcome emails, the Slack notifications — everything just happens the moment a new client signs up. What used to take two hours now takes less than a minute.</p>
+      <div class="twa">
+        <div class="twav">SM</div>
+        <div>
+          <div class="twn">Sarah Mitchell</div>
+          <div class="twr">Operations Manager, Creative Agency</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw">
+      <div class="twq">"</div>
+      <p class="twt">She built us a Telegram bot that actually knows our property listings and answers buyer questions intelligently. Our team stopped spending hours on the same repetitive inquiries and every serious lead now gets captured automatically. The quality of our response time went from hours to seconds.</p>
+      <div class="twa">
+        <div class="twav">MA</div>
+        <div>
+          <div class="twn">Michael Adeyemi</div>
+          <div class="twr">Founder, Real Estate Company</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD TESTIMONIAL HERE:
+    <div class="tw">
+      <div class="twq">"</div>
+      <p class="twt">Your client quote goes here.</p>
+      <div class="twa">
+        <div class="twav">XX</div>
+        <div>
+          <div class="twn">Client Name</div>
+          <div class="twr">Role, Company</div>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</div></section>
+
+<!-- CONTACT -->
 <section id="contact"><div class="ci">
   <div class="sl">Get In Touch</div>
   <h2 class="st">Ready to Stop <em>Doing Things Manually?</em></h2>
   <div class="cg rv">
     <div class="ct">
-      <p>Whether you're a business owner drowning in repetitive tasks, an agency needing a custom client system, or a company that's outgrown its spreadsheets — I build the infrastructure that lets you scale without hiring.</p>
+      <p>Whether you're a business owner drowning in repetitive tasks, an agency needing a custom client system, or a company that has outgrown its spreadsheets, I build the infrastructure that lets you scale without hiring more people.</p>
       <p>I'm available for freelance projects, full-time remote roles, and long-term partnerships. Let's talk about what you need built.</p>
       <div class="cl">
-        <a href="mailto:zoladepo@gmail.com" class="cli"><div class="clii">✉️</div><div class="clic"><div class="clil">Email</div><div class="cliv">zoladepo@gmail.com</div></div><div class="clia">→</div></a>
-        <a href="https://www.linkedin.com/in/oladepozeenat" target="_blank" rel="noopener" class="cli"><div class="clii">💼</div><div class="clic"><div class="clil">LinkedIn</div><div class="cliv">linkedin.com/in/oladepozeenat</div></div><div class="clia">→</div></a>
-        <a href="https://x.com/taneez_z" target="_blank" rel="noopener" class="cli"><div class="clii">𝕏</div><div class="clic"><div class="clil">X / Twitter</div><div class="cliv">@taneez_z</div></div><div class="clia">→</div></a>
+        <a href="mailto:zoladepo@gmail.com" class="cli"><div class="clii">&#x2709;&#xFE0F;</div><div class="clic"><div class="clil">Email</div><div class="cliv">zoladepo@gmail.com</div></div><div class="clia">&#x2192;</div></a>
+        <a href="https://www.linkedin.com/in/oladepozeenat" target="_blank" rel="noopener" class="cli"><div class="clii">&#x1F4BC;</div><div class="clic"><div class="clil">LinkedIn</div><div class="cliv">linkedin.com/in/oladepozeenat</div></div><div class="clia">&#x2192;</div></a>
+        <a href="https://x.com/taneez_z" target="_blank" rel="noopener" class="cli"><div class="clii">&#x1D54F;</div><div class="clic"><div class="clil">X / Twitter</div><div class="cliv">@taneez_z</div></div><div class="clia">&#x2192;</div></a>
       </div>
     </div>
     <div class="ccb">
       <h3>Let's Build Something<br/>That Runs Itself</h3>
       <p>I respond within 24 hours. Tell me what's broken, what's manual, or what you wish your business could do on autopilot.</p>
-      <a href="mailto:zoladepo@gmail.com?subject=I want to automate my business" class="bp" style="margin:0 auto;display:inline-flex">Send Me a Message →</a>
+      <a href="mailto:zoladepo@gmail.com?subject=I want to automate my business" class="bp" style="margin:0 auto;display:inline-flex">Send Me a Message &#x2192;</a>
     </div>
   </div>
 </div></section>
+
 <footer>
   <div class="fl">OZ<span>.</span></div>
-  <div class="fc">© 2025 Oladepo Zeenat. All rights reserved.</div>
+  <div class="fc">&#x00A9; 2025 Oladepo Zeenat. All rights reserved.</div>
   <div class="fs">
     <a href="https://www.linkedin.com/in/oladepozeenat" target="_blank" rel="noopener" class="fsi"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
     <a href="https://x.com/taneez_z" target="_blank" rel="noopener" class="fsi"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     <a href="mailto:zoladepo@gmail.com" class="fsi"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
   </div>
 </footer>
+
+<!-- VIDEO MODAL -->
 <div class="mo" id="vm" onclick="if(event.target.id==='vm')cV()">
-  <div class="mb"><div class="mh"><span class="mt" id="vt">Demo</span><button class="mc" onclick="cV()">✕</button></div><div class="mv"><iframe id="vi" src="" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe></div></div>
+  <div class="mb"><div class="mh"><span class="mt" id="vt">Demo</span><button class="mc" onclick="cV()">&#x2715;</button></div><div class="mv"><iframe id="vi" src="" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe></div></div>
 </div>
+
+<!-- GALLERY MODAL -->
 <div class="gmo" id="gm" onclick="if(event.target.id==='gm')cG()">
   <div class="gmi">
-    <div class="gmh"><div><div class="gmt" id="gt">Screenshots</div><div class="gmcnt" id="gcnt">1 / 1</div></div><button class="gmcl" onclick="cG()">✕</button></div>
-    <div class="giw"><img id="gi" src="" alt="Screenshot"/><button class="gn gp" onclick="gs(-1)">‹</button><button class="gn gnx" onclick="gs(1)">›</button></div>
+    <div class="gmh"><div><div class="gmt" id="gt">Screenshots</div><div class="gmcnt" id="gcnt">1 / 1</div></div><button class="gmcl" onclick="cG()">&#x2715;</button></div>
+    <div class="giw"><img id="gi" src="" alt="Screenshot"/><button class="gn gp" onclick="gs(-1)">&#x2039;</button><button class="gn gnx" onclick="gs(1)">&#x203A;</button></div>
     <div class="gds" id="gds"></div>
   </div>
 </div>
+
 <script>
   window.addEventListener('scroll',()=>document.getElementById('nb2').classList.toggle('sc',scrollY>40));
   document.getElementById('bb').onclick=()=>document.getElementById('mn2').classList.add('open');
@@ -362,7 +553,7 @@
   function sSlide(){document.getElementById('gi').src=gi[gx];document.getElementById('gcnt').textContent=(gx+1)+' / '+gi.length;document.querySelectorAll('.gd').forEach((d,i)=>d.classList.toggle('active',i===gx));}
   function bDots(){const w=document.getElementById('gds');w.innerHTML=gi.map((_,i)=>`<button class="gd${i===0?' active':''}" onclick="gx=${i};sSlide()"></button>`).join('');}
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){cV();cG();}if(document.getElementById('gm').classList.contains('open')){if(e.key==='ArrowLeft')gs(-1);if(e.key==='ArrowRight')gs(1);}});
-  const obs=new IntersectionObserver(entries=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vs'),(e.target.dataset.d||0)*120);obs.unobserve(e.target);}});},{threshold:.1});
+  const obs=new IntersectionObserver(entries=>{entries.forEach((e)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vs'),(e.target.dataset.d||0)*120);obs.unobserve(e.target);}});},{threshold:.1});
   document.querySelectorAll('.rv').forEach((el,i)=>{el.dataset.d=i%4;obs.observe(el);});
   document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});});});
 </script>
