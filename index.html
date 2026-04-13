@@ -581,4 +581,9 @@
   function gs(d){gx=(gx+d+gi.length)%gi.length;sSlide();}
   function sSlide(){document.getElementById('gi').src=gi[gx];document.getElementById('gcnt').textContent=(gx+1)+' / '+gi.length;document.querySelectorAll('.gd').forEach((d,i)=>d.classList.toggle('active',i===gx));}
   function bDots(){const w=document.getElementById('gds');w.innerHTML=gi.map((_,i)=>`<button class="gd${i===0?' active':''}" onclick="gx=${i};sSlide()"></button>`).join('');}
-  document
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){cV();cG();}if(document.getElementById('gm').classList.contains('open')){if(e.key==='ArrowLeft')gs(-1);if(e.key==='ArrowRight')gs(1);}});
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vs');obs.unobserve(e.target);}});},{threshold:0.1});
+  document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
