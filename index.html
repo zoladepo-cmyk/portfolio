@@ -565,92 +565,17 @@
 </div>
 
 <script>
-  window.addEventListener('scroll', () => {
-    document.getElementById('nb2').classList.toggle('sc', scrollY > 40);
-  });
-
-  document.getElementById('bb').onclick = () => document.getElementById('mn2').classList.add('open');
-  document.getElementById('mnc').onclick = () => document.getElementById('mn2').classList.remove('open');
-
-  document.querySelectorAll('.ml').forEach(l => {
-    l.addEventListener('click', () => document.getElementById('mn2').classList.remove('open'));
-  });
-
-  document.querySelectorAll('.fb').forEach(b => {
-    b.addEventListener('click', () => {
-      document.querySelectorAll('.fb').forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      const f = b.dataset.f;
-      document.querySelectorAll('.pc').forEach(c => {
-        c.classList.toggle('hidden', f !== 'all' && c.dataset.tool !== f);
-      });
-    });
-  });
-
-  function oV(t, u) {
-    document.getElementById('vt').textContent = t;
-    document.getElementById('vi').src = u + '?autoplay=1';
-    document.getElementById('vm').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function cV() {
-    document.getElementById('vm').classList.remove('open');
-    document.getElementById('vi').src = '';
-    document.body.style.overflow = '';
-  }
-
-  let gi = [], gx = 0;
-
-  function oG(t, imgs) {
-    gi = imgs;
-    gx = 0;
-    document.getElementById('gt').textContent = t;
-    bDots();
-    sSlide();
-    document.getElementById('gm').classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function cG() {
-    document.getElementById('gm').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  function bDots() {
-    const container = document.getElementById('gds');
-    container.innerHTML = '';
-    gi.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.className = 'gd' + (i === 0 ? ' active' : '');
-      dot.onclick = () => { gx = i; sSlide(); };
-      container.appendChild(dot);
-    });
-  }
-
-  function sSlide() {
-    document.getElementById('gi').src = gi[gx];
-    document.getElementById('gcnt').textContent = `${gx + 1} / ${gi.length}`;
-    document.querySelectorAll('.gd').forEach((d, i) => {
-      d.classList.toggle('active', i === gx);
-    });
-  }
-
-  function gs(dir) {
-    gx = (gx + dir + gi.length) % gi.length;
-    sSlide();
-  }
-
-  // Close modals when pressing Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const vm = document.getElementById('vm');
-      const gm = document.getElementById('gm');
-      if (vm.classList.contains('open')) cV();
-      else if (gm.classList.contains('open')) cG();
-    }
-  });
-</script>
-
-</body>
-</html>
+  window.addEventListener('scroll',()=>document.getElementById('nb2').classList.toggle('sc',scrollY>40));
+  document.getElementById('bb').onclick=()=>document.getElementById('mn2').classList.add('open');
+  document.getElementById('mnc').onclick=()=>document.getElementById('mn2').classList.remove('open');
+  document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',()=>document.getElementById('mn2').classList.remove('open')));
+  document.querySelectorAll('.fb').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+    const f=b.dataset.f;
+    document.querySelectorAll('.pc').forEach(c=>c.classList.toggle('hidden',f!=='all'&&c.dataset.tool!==f));
+  }));
+  function oV(t,u){document.getElementById('vt').textContent=t;document.getElementById('vi').src=u+'?autoplay=1';document.getElementById('vm').classList.add('open');document.body.style.overflow='hidden';}
+  function cV(){document.getElementById('vm').classList.remove('open');document.getElementById('vi').src='';document.body.style.overflow='';}
+  let gi=[],gx=0;
+  function oG(t,imgs){gi=imgs;gx=0;document.getElementById('gt').textContent=t;bDots();sSlide();document.getElementById('gm').classList.add('open');document.body.style.overflow='hidden';}
+  function cG(){document.getElementById('gm').c
